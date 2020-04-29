@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Minimal Form Interface</title>
+		<meta name="description" content="Minimal Form Interface: Simplistic, single input view form" />
+		<meta name="keywords" content="form, minimal, interface, single input, big form, responsive form, transition" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>  
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	
+
+
+		<script src="js/modernizr.custom.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<!--<script src="modal.js"></script>-->
+
+
+<style type="text/css">
+	
+.login{
+	width: 50%;
+	height: 400px;
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 25%;
+	padding: 20px;
+	padding-top: 10px;
+}
+h2{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+
+.login input{
+	width: 60%;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.send{
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h4{
+	float: left;
+}
+
+.log{
+	padding-left: 20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h2>E-GUIDE</h2>
+
+<div class="login">
+<form method="POST" action="/login">
+<h3 style="margin-bottom: 20px;">ADMIN LOGIN</h3>
+<div class="log">
+<h4>USERNAME-</h4><input type="text" name="username"></div>
+<div class="log">	
+<h4>PASSWORD-</h4><input type="password" name="password">
+</div>
+<input style="width: 150px; margin: 20px;" class="send" type="submit" name="submit" value="SUBMIT">
+</form>
+
+<div>
+	<% if(message == "") {%>
+
+	<% } else { %>
+	<p style="color: red;"><%= message %></p>
+	<% } %>
+</div>
+
+</div>
+
+
+</body>
+
+	</html>

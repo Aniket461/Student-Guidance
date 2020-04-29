@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Minimal Form Interface</title>
+		<meta name="description" content="Minimal Form Interface: Simplistic, single input view form" />
+		<meta name="keywords" content="form, minimal, interface, single input, big form, responsive form, transition" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>  
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	
+
+
+		<script src="js/modernizr.custom.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<!--<script src="modal.js"></script>-->
+
+		<style>
+		
+		label{
+
+			font-size: 20px;
+		}
+
+
+.mod{
+
+	height: 1000px;
+	z-index: 11;
+	background-color: rgba(255,255,255,0.5);
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	visibility: hidden;
+}
+.mod img{
+	text-align: center;
+	margin-top: 12%;
+    margin-left: 0%;
+}
+		</style>
+
+	</head>
+	<body>
+
+			<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+					<a class="navbar-brand" href="/">E-GUIDE</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+				  
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+						  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+						</li>
+						
+							    <li class="nav-item">
+										<a class="nav-link" href="/companydetails">Companies</a>
+									  </li>
+									  <li class="nav-item">
+										<a class="nav-link" href="/roles">Roles</a>
+									  </li>
+									  <li class="nav-item">
+										<a class="nav-link" href="https://studentguide.netlify.com/">ChatBot</a>
+									  </li>
+				   
+					  </ul>
+					</div>
+				  </nav>
+	
+
+
+<div class="mod" id="">
+
+				<img src="/images/loading3.gif" width="300" height="300">
+				<h3>Your result is loading.....</h3>
+				</div>
+			
+		<div class="container" style="margin-bottom: 100px; height:700px; position: relative;">
+			<!-- Top Navigation -->
+			<!-- <div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/3DGridEffect/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=18780"><span>Back to the Codrops Article</span></a></span>
+			</div> -->
+			<header class="codrops-header">
+				<!-- <h1>Minimal Form Interface <span>Simplistic, single input view form</span></h1>	 -->
+			</header>
+
+
+			<!-- The Modal -->
+			  <!-- <div class="modal-dialog">
+				<div class="modal-content">
+ -->
+				  <!-- Modal Header -->
+				  <!-- <div class="modal-header">
+					
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				  </div>
+
+				  <!- Modal body -->
+				  <!-- <div class="modal-body" style="height: 325px;">
+					<div class="wrapper first-content">
+					<div class="progress-circle p10 left">
+			   <div class="left-half-clipper">
+				  <div class="first50-bar"></div>
+				  <div class="value-bar"></div>
+			   </div>
+			</div>
+
+			
+			<button type="button" style="margin-left: 22%;margin-top:100px;font-size:17px;" class="btn btn-info first-button">Wait, Your results are loading!! </button>
+				  </div>
+				
+			</div> -->
+				  <!-- Modal footer -->
+				  <!-- <div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				  </div>
+
+				</div>
+			  </div> -->
+			
+
+			<section style="background-color: rgb(158, 198, 233);height: 100vh;">
+				<form id="theForm" class="simform" autocomplete="off" method="POST" action="/assess">
+					<div class="simform-inner">
+						<ol class="questions">
+							<input type="hidden" name="arra" id="answer"/>
+							<li>
+								<span><label for="q1">How much percentage of marks did you get in Operating Systems?</label></span>
+								<!-- Default unchecked -->
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=45 id="a" />
+    								<label for="a">40-50</label>
+    								<input type="radio" class="radio" name="x" value=55 id="b" />
+    								<label for="b">50-60</label>
+    								<input type="radio" class="radio" name="x" value=65 id="c" />
+    								<label for="c">60-70</label>
+    								<input type="radio" class="radio" name="x" value=75 id="d" />
+    								<label for="d">70-80</label>
+    								<input type="radio" class="radio" name="x" value=85 id="e" />
+									<label for="e">80-90</label>
+									<input type="radio" class="radio" name="x" value=95 id="e" />
+    								<label for="e">90-100</label>
+  									</div>
+								</fieldset>
+
+							</li>
+							<li>
+								<span><label for="q2">How much percentage of marks did you get in Data Structures and Algorithms?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=45 id="a" />
+    								<label for="a">40-50</label>
+    								<input type="radio" class="radio" name="x" value=55 id="b" />
+    								<label for="b">50-60</label>
+    								<input type="radio" class="radio" name="x" value=65 id="c" />
+    								<label for="c">60-70</label>
+    								<input type="radio" class="radio" name="x" value=75 id="d" />
+    								<label for="d">70-80</label>
+    								<input type="radio" class="radio" name="x" value=85 id="e" />
+									<label for="e">80-90</label>
+									<input type="radio" class="radio" name="x" value=95 id="e" />
+    								<label for="e">90-100</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q3">How much percentage of marks did you get in SPA or JPL?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=45 id="a" />
+    								<label for="a">40-50</label>
+    								<input type="radio" class="radio" name="x" value=55 id="b" />
+    								<label for="b">50-60</label>
+    								<input type="radio" class="radio" name="x" value=65 id="c" />
+    								<label for="c">60-70</label>
+    								<input type="radio" class="radio" name="x" value=75 id="d" />
+    								<label for="d">70-80</label>
+    								<input type="radio" class="radio" name="x" value=85 id="e" />
+									<label for="e">80-90</label>
+									<input type="radio" class="radio" name="x" value=95 id="e" />
+    								<label for="e">90-100</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q4">How much percentage of marks did you get in Software Engineering and Project Management?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=45 id="a" />
+    								<label for="a">40-50</label>
+    								<input type="radio" class="radio" name="x" value=55 id="b" />
+    								<label for="b">50-60</label>
+    								<input type="radio" class="radio" name="x" value=65 id="c" />
+    								<label for="c">60-70</label>
+    								<input type="radio" class="radio" name="x" value=75 id="d" />
+    								<label for="d">70-80</label>
+    								<input type="radio" class="radio" name="x" value=85 id="e" />
+									<label for="e">80-90</label>
+									<input type="radio" class="radio" name="x" value=95 id="e" />
+    								<label for="e">90-100</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q5">How much percentage of marks did you get in Computer Networks?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=45 id="a" />
+    								<label for="a">40-50</label>
+    								<input type="radio" class="radio" name="x" value=55 id="b" />
+    								<label for="b">50-60</label>
+    								<input type="radio" class="radio" name="x" value=65 id="c" />
+    								<label for="c">60-70</label>
+    								<input type="radio" class="radio" name="x" value=75 id="d" />
+    								<label for="d">70-80</label>
+    								<input type="radio" class="radio" name="x" value=85 id="e" />
+									<label for="e">80-90</label>
+									<input type="radio" class="radio" name="x" value=95 id="e" />
+    								<label for="e">90-100</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q6">How much percentage of marks did you get in Microprocessor and Microcontroller?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=45 id="a" />
+    								<label for="a">40-50</label>
+    								<input type="radio" class="radio" name="x" value=55 id="b" />
+    								<label for="b">50-60</label>
+    								<input type="radio" class="radio" name="x" value=65 id="c" />
+    								<label for="c">60-70</label>
+    								<input type="radio" class="radio" name="x" value=75 id="d" />
+    								<label for="d">70-80</label>
+    								<input type="radio" class="radio" name="x" value=85 id="e" />
+									<label for="e">80-90</label>
+									<input type="radio" class="radio" name="x" value=95 id="e" />
+    								<label for="e">90-100</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q7">How much percentage of marks did you get in Computer Organization and Architecture?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=45 id="a" />
+    								<label for="a">40-50</label>
+    								<input type="radio" class="radio" name="x" value=55 id="b" />
+    								<label for="b">50-60</label>
+    								<input type="radio" class="radio" name="x" value=65 id="c" />
+    								<label for="c">60-70</label>
+    								<input type="radio" class="radio" name="x" value=75 id="d" />
+    								<label for="d">70-80</label>
+    								<input type="radio" class="radio" name="x" value=85 id="e" />
+									<label for="e">80-90</label>
+									<input type="radio" class="radio" name="x" value=95 id="e" />
+    								<label for="e">90-100</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q8">How much percentage of marks did you get in Mathematics(Your Highest score in Applied Mathematics)?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=45 id="a" />
+    								<label for="a">40-50</label>
+    								<input type="radio" class="radio" name="x" value=55 id="b" />
+    								<label for="b">50-60</label>
+    								<input type="radio" class="radio" name="x" value=65 id="c" />
+    								<label for="c">60-70</label>
+    								<input type="radio" class="radio" name="x" value=75 id="d" />
+    								<label for="d">70-80</label>
+    								<input type="radio" class="radio" name="x" value=85 id="e" />
+									<label for="e">80-90</label>
+									<input type="radio" class="radio" name="x" value=95 id="e" />
+    								<label for="e">90-100</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q9">How much percentage of marks did you get in Business Communication and Ethics?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=45 id="a" />
+    								<label for="a">40-50</label>
+    								<input type="radio" class="radio" name="x" value=55 id="b" />
+    								<label for="b">50-60</label>
+    								<input type="radio" class="radio" name="x" value=65 id="c" />
+    								<label for="c">60-70</label>
+    								<input type="radio" class="radio" name="x" value=75 id="d" />
+    								<label for="d">70-80</label>
+    								<input type="radio" class="radio" name="x" value=85 id="e" />
+									<label for="e">80-90</label>
+									<input type="radio" class="radio" name="x" value=95 id="e" />
+    								<label for="e">90-100</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q10">What is the maximum number of hours do you see yourself working per day?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=8 id="a" />
+    								<label for="a">8 hours</label>
+    								<input type="radio" class="radio" name="x" value=9 id="b" />
+    								<label for="b">9 hours</label>
+    								<input type="radio" class="radio" name="x" value=10 id="c" />
+    								<label for="c">10 hours</label>
+    								<input type="radio" class="radio" name="x" value=11 id="d" />
+    								<label for="d">11 hours</label>
+    								<input type="radio" class="radio" name="x" value=12 id="e" />
+    								<label for="e">12 hours</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q11">What is your Logical Quotient Rating?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=1 id="a" />
+    								<label for="a">1</label>
+    								<input type="radio" class="radio" name="x" value=2 id="b" />
+    								<label for="b">2</label>
+    								<input type="radio" class="radio" name="x" value=3 id="c" />
+    								<label for="c">3</label>
+    								<input type="radio" class="radio" name="x" value=4 id="d" />
+    								<label for="d">4</label>
+    								<input type="radio" class="radio" name="x" value=5 id="e" />
+    								<label for="e">5</label>
+										<input type="radio" class="radio" name="x" value=6 id="f" />
+    								<label for="f">6</label>
+										<input type="radio" class="radio" name="x" value=7 id="g" />
+    								<label for="g">7</label>
+										<input type="radio" class="radio" name="x" value=8 id="h" />
+    								<label for="h">8</label>
+										<!-- <br>
+										<input type="radio" class="radio" name="x" value=9 id="i" />
+    								<label for="i">9</label>
+										<input type="radio" class="radio" name="x" value=10 id="j" />
+    								<label for="j">10</label> -->
+  									</div>
+								</fieldset>
+							</li>
+							<!-- This one -->
+							<li>
+								<span><label for="q12">How many Hackathons you have competed in?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=1 id="a" />
+    								<label for="a">1</label>
+    								<input type="radio" class="radio" name="x" value=2 id="b" />
+    								<label for="b">2</label>
+    								<input type="radio" class="radio" name="x" value=3 id="c" />
+    								<label for="c">3</label>
+    								<input type="radio" class="radio" name="x" value=4 id="d" />
+    								<label for="d">4</label>
+    								<input type="radio" class="radio" name="x" value=5 id="e" />
+    								<label for="e">5</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q12">How much do you rate yourself in coding skills?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=1 id="a" />
+    								<label for="a">1</label>
+    								<input type="radio" class="radio" name="x" value=2 id="b" />
+    								<label for="b">2</label>
+    								<input type="radio" class="radio" name="x" value=3 id="c" />
+    								<label for="c">3</label>
+    								<input type="radio" class="radio" name="x" value=4 id="d" />
+    								<label for="d">4</label>
+    								<input type="radio" class="radio" name="x" value=5 id="e" />
+    								<label for="e">5</label>
+										<input type="radio" class="radio" name="x" value=6 id="f" />
+    								<label for="f">6</label>
+										<input type="radio" class="radio" name="x" value=7 id="g" />
+    								<label for="g">7</label>
+										<input type="radio" class="radio" name="x" value=8 id="h" />
+    								<label for="h">8</label>
+										<!-- <input type="radio" class="radio" name="x" value=9 id="i" />
+    								<label for="i">9</label>
+										<input type="radio" class="radio" name="x" value=10 id="j" />
+    								<label for="j">10</label>  -->
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q12">How much do you rate yourself in public speaking skills?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=1 id="a" />
+    								<label for="a">1</label>
+    								<input type="radio" class="radio" name="x" value=2 id="b" />
+    								<label for="b">2</label>
+    								<input type="radio" class="radio" name="x" value=3 id="c" />
+    								<label for="c">3</label>
+    								<input type="radio" class="radio" name="x" value=4 id="d" />
+    								<label for="d">4</label>
+    								<input type="radio" class="radio" name="x" value=5 id="e" />
+    								<label for="e">5</label>
+										<input type="radio" class="radio" name="x" value=6 id="f" />
+    								<label for="f">6</label>
+										<input type="radio" class="radio" name="x" value=7 id="g" />
+    								<label for="g">7</label>
+										<input type="radio" class="radio" name="x" value=8 id="h" />
+    								<label for="h">8</label>
+										<!-- <input type="radio" class="radio" name="x" value=9 id="i" />
+    								<label for="i">9</label>
+										<input type="radio" class="radio" name="x" value=10 id="j" />
+    								<label for="j">10</label> -->
+  									</div>
+								</fieldset>
+							</li>
+							<!-- This one -->
+							<!-- This one -->
+							<li>
+								<span><label for="q12">Do you have any of the following certifications? If more than one, choose the one most comfortable with and if none or some other, choose others?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=7 id="a" />
+    								<label for="a">R Programming</label>
+    								<input type="radio" class="radio" name="x" value=5 id="b" />
+    								<label for="b">Machine Learning</label>
+    								<input type="radio" class="radio" name="x" value=8 id="c" />
+									<label for="c">Shell Programming</label>
+									<br>
+    								<input type="radio" class="radio" name="x" value=4 id="d" />
+    								<label for="d">Information Security</label>
+    								<input type="radio" class="radio" name="x" value=2 id="e" />
+    								<label for="e">Full Stack</label>
+									<input type="radio" class="radio" name="x" value=3 id="f" />
+    								<label for="f">Hadoop</label>
+										<input type="radio" class="radio" name="x" value=6 id="g" />
+									<label for="g">Python</label>
+									<br>
+										<input type="radio" class="radio" name="x" value=0 id="h" />
+    								<label for="h">App Development</label>
+										<input type="radio" class="radio" name="x" value=1 id="i" />
+    								<label for="i">Distro Making</label>
+	
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q12">Have you attend any of the following workshops? If more than one, choose the one most comfortable with and if none or some other, choose others?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=7 id="a" />
+    								<label for="a">Web Technologies</label>
+    								<input type="radio" class="radio" name="x" value=1 id="b" />
+    								<label for="b">Data Science</label>
+    								<input type="radio" class="radio" name="x" value=3 id="c" />
+									<label for="c">Game Development</label>
+									<br>
+    								<input type="radio" class="radio" name="x" value=2 id="d" />
+    								<label for="d">Database Security</label>
+    								<input type="radio" class="radio" name="x" value=4 id="e" />
+    								<label for="e">Hacking</label>
+										<input type="radio" class="radio" name="x" value=6 id="f" />
+    								<label for="f">Testing</label>
+										<input type="radio" class="radio" name="x" value=0 id="g" />
+									<label for="g">Cloud Computing</label>
+									<br>
+									<input type="radio" class="radio" name="x" value=5 id="g" />
+    								<label for="g">System Designing</label>
+  									</div>
+								</fieldset>
+							</li>
+							<!-- This one -->
+							<!-- This one -->
+							<li>
+								<span><label for="q12">Choose any one of the following subjects that interests you the most?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=7 id="a" />
+    								<label for="a">Networks</label>
+    								<input type="radio" class="radio" name="x" value=1 id="b" />
+    								<label for="b">IOT</label>
+    								<input type="radio" class="radio" name="x" value=5 id="c" />
+    								<label for="c">Data Engineering</label>
+    								<input type="radio" class="radio" name="x" value=0 id="d" />
+									<label for="d">Computer Architecture</label>
+									<br>
+    								<input type="radio" class="radio" name="x" value=6 id="e" />
+    								<label for="e">Hacking</label>
+									<input type="radio" class="radio" name="x" value=9 id="f" />
+    								<label for="f">Programming</label>
+										<input type="radio" class="radio" name="x" value=4 id="g" />
+    								<label for="g">Cloud Computing</label>
+										<input type="radio" class="radio" name="x" value=3 id="h" />
+    								<label for="h">Software Engineering</label>
+										<input type="radio" class="radio" name="x" value=2 id="i" />
+    								<label for="i">Management</label>
+										<input type="radio" class="radio" name="x" value=8 id="j" />
+    								<label for="j">Parallel Computing</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q12">Which of the following role will interest you the most?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=5 id="a" />
+    								<label for="a">Testing</label>
+    								<input type="radio" class="radio" name="x" value=4 id="b" />
+    								<label for="b">System Developer</label>
+    								<input type="radio" class="radio" name="x" value=1 id="c" />
+    								<label for="c">Cloud Computing</label>
+    								<input type="radio" class="radio" name="x" value=3 id="d" />
+									<label for="d">Security</label>
+									<br>
+    								<input type="radio" class="radio" name="x" value=0 id="e" />
+    								<label for="e">Business Process Analyst</label>
+										<input type="radio" class="radio" name="x" value=2 id="f" />
+    								<label for="f">Developer</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+								<span><label for="q12">What would be the type of the company which you would want to settle in?</label></span>
+								<fieldset>
+  									<div class="some-class">
+    								<input type="radio" class="radio" name="x" value=0 id="a" />
+    								<label for="a">BPA</label>
+    								<input type="radio" class="radio" name="x" value=7 id="b" />
+    								<label for="b">Testing and Maintenance Services</label>
+    								<input type="radio" class="radio" name="x" value=6 id="c" />
+    								<label for="c">Service Based</label>
+    								<input type="radio" class="radio" name="x" value=8 id="d" />
+    								<label for="d">Web Services</label>
+    								<input type="radio" class="radio" name="x" value=3 id="e" />
+    								<label for="e">Product Based</label>
+									<input type="radio" class="radio" name="x" value=1 id="f" />
+    								<label for="f">Cloud Services</label>
+										<input type="radio" class="radio" name="x" value=2 id="g" />
+									<label for="g">Finance</label>
+									<input type="radio" class="radio" name="x" value=4 id="h" />
+									<label style="margin-right: 100px;" for="h">SaaS Services</label>
+									<input type="radio" class="radio" name="x" value=9 id="i" />
+    								<label for="i">Product Development</label>
+										<input type="radio" class="radio" name="x" value=5 id="j" />
+    								<label for="j">Sales and Marketing</label>
+  									</div>
+								</fieldset>
+							</li>
+							<li>
+									<span><label for="q12">What are the type of Books are you interested in?</label></span>
+									<fieldset>
+										  <div class="some-class">
+										<input type="radio" class="radio" name="x" value=14 id="a" />
+										<label for="a">Health</label>
+										<input type="radio" class="radio" name="x" value=16 id="b" />
+										<label for="b">Horror</label>
+										<input type="radio" class="radio" name="x" value=3 id="c" />
+										<label for="c">Autobiography</label>
+										<input type="radio" class="radio" name="x" value=12 id="d" />
+										<label for="d">Fantasy</label>
+										<input type="radio" class="radio" name="x" value=24 id="e" />
+										<label for="e">Satire</label>
+										<input type="radio" class="radio" name="x" value=6 id="f" />
+										<label for="f">Comics</label>
+										<input type="radio" class="radio" name="x" value=20 id="g" />
+										<label for="g">Poetry</label>
+										  </div>
+									</fieldset>
+								</li>
+								
+						</ol><!-- /questions -->
+
+						<button class="submit btn-lg" type="submit"></button>
+
+
+						<div class="controls">
+							<button class="next" disabled="disabled" onclick="Checker()"></button>
+							<div class="progress progress1" style="font-size:5.75rem;"></div>
+							<span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+							<span class="error-message"></span>
+						</div><!-- / controls -->
+					</div><!-- /simform-inner -->
+					<div class="final-message" style="margin-top: 55px;">
+						<button type="submit" class="btn subb btn-primary" data-toggle="modal" data-target="#myModal" id="btn1" style="width: 150px;height: 47px;font-size: 20px;font-weight: bold;">Result</button>
+					</div>
+				</form><!-- /simform -->
+			</section>
+			<!-- <section class="related">
+				<p>If you enjoyed this demo you might also like:</p>
+				<a href="http://tympanus.net/Tutorials/NaturalLanguageForm/">
+					<img src="http://tympanus.net/codrops/wp-content/uploads/2013/05/NaturalLanguageForm2-300x162.png" />
+					<h3>Natural Language Form</h3>
+				</a>
+				<a href="http://tympanus.net/Development/AnimatedCheckboxes/">
+					<img src="http://tympanus.net/codrops/wp-content/uploads/2013/10/AnimatedCheckboxes-300x162.png" />
+					<h3>Animated Checkboxes with SVG</h3>
+				</a>
+			</section> -->
+		</div><!-- /container -->
+
+
+
+
+
+		<footer class="bg-dark" style="margin-top:0px; overflow:hidden;">
+  
+				<div class="d1">
+				  <h3>NEWSLETTER</h3>
+				  <p style="color: #DCDCDC; padding: 3px; font-size: 12px;">Submit your email below to sign up for our NewsLetter and stay upto date with all the latest upgrades!!</p>
+				  <form class="form-inline my-2 my-lg-0" style="text-align: center;">
+					<input class="form-control mr-sm-2" type="email" name="newsletter" placeholder="email" style="width: 70%; margin-left: 5%;">
+				 <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left: 5%;"><i class="fa fa-envelope"></i></button>
+				  </form>
+				
+				
+				</div>
+				<div class="d2">
+				  <h3>FOLLOW US</h3>
+				  <p style="color: #DCDCDC; padding: 3px; font-size: 12px;"> Follow us on our Social Media handles to keep up with all the latest happening at E-Guide!! </p>
+				
+				  <i class="fa fa-facebook"></i>
+				  <i class="fa fa-twitter"></i>
+				  <i class="fa fa-instagram"></i>
+				  
+				</div>
+				<div class="d3">
+				  <h3>CONTACT</h3>
+				  <p style="color: #DCDCDC; padding: 3px; font-size: 12px;"> To Contact us you can call or email athe given address and we will get back to you ASAP!!</p>
+				  <div>
+				  <i class="fa fa-mobile"></i><p style="margin-left: -10px;">+91-7715089526</p></div>
+				  <div>
+				  <i class="fa fa-envelope"></i><p>surveaniket461@gmail.com</p>
+				  </div>
+				</div>
+				
+				</footer>
+		
+
+
+
+
+		<script src="js/classie.js"></script>
+		<script src="js/stepsForm.js"></script>
+		<script>
+
+			$("input:radio").change(function () {$(".next").prop("disabled", false);});
+
+			var rate_value;
+			var arr = [];
+			var theForm = document.getElementById( 'theForm' );
+			//theForm.addClass(theForm.querySelector('.final-message'), 'hide');
+
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					// hide form
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+					//document.getElementsByClassName("final-message").style.display = "block";
+					//classie.addClass( theForm.querySelector('.final-message'), 'block');
+					/*
+					form.submit()
+					or
+					AJAX request (maybe show loading indicator while we don't have an answer..)
+					*/
+
+					// let's just simulate something...
+					//var messageEl = theForm.querySelector( '.final-message' );
+					//messageEl.innerHTML = 'Results ';
+
+					//document.getElementById("btn1").style.display = "block";
+					//classie.addClass( messageEl, 'show' );
+					//window.location.href = "file:///C:/Users/renu/Desktop/MinimalForm/MinimalForm/index1.html";
+					//var messageEl = theForm.querySelector( '.final-message' );
+					//messageEl.innerHTML =  'We Got Your Information. \n To see the Result click Result Button'+ '\n';
+					//messageEl.innerHTML	=  document.getElementById("btn1").style.display = "block";
+
+					//classie.addClass( messageEl, 'show' );
+
+					var options = theForm.querySelector('.final-message');
+					options.innerHTML = options.innerHTML + "<h1> We Got Your Information.</h1><h2>To see the Result click Result Button </h2></br>";
+					classie.addClass(options, 'show');
+
+
+var subb = document.querySelector(".subb");
+			subb.addEventListener('click',()=>{
+
+
+					var dd = document.querySelector(".final-message");
+					dd.style.visibility = 'hidden';
+					var container = document.querySelector(".container");
+					container.style.visibility = 'hidden';
+					var mod = document.querySelector(".mod");
+					mod.style.visibility = 'visible';
+
+
+			});
+			
+
+
+					$(function () {
+						$(".openModal").click(function(){
+						setTimeout(function(){
+						var h=$(".modal-body .first-content p").height();
+						$(".modal-body").css('height',h+80+'px');
+						$(".modal-body .first-content p").css('height',h+'px');
+						},250);
+					});
+
+					$('.first-button').on('click', function () {
+					$('.first-content').animate({width:"toggle"}, function(){
+					$('.second-content').animate({width:"toggle"});
+					var h=$(".modal-body .second-content p").height();
+					//$(".modal-body").css('height',h+80+'px');
+					//$(".modal-body .second-content p").css('height',h+80+'px');
+					});
+			}		);
+					
+
+			$('.second-button').on('click', function () {
+			//$('.second-content').animate({width:"toggle"},function(){
+			//  $('.first-content').animate({width:"toggle"});
+			//    var h=$(".modal-body .first-content p").height();
+				$(".modal-body").css('height',h+80+'px');
+				$(".modal-body .first-content p").css('height',h+80+'px');
+			window.location.href = "file:///C:/Users/renu/Desktop/1/index2.html"
+			//});
+  });
+});
+
+
+				}
+			} );
+
+			var sub = document.getElementById('answer');
+			
+
+			function Checker(){
+				rate_value = "1";
+				if(document.querySelector('input[name=x]:checked') != null){
+					rate_value = document.querySelector('input[name=x]:checked').value;
+					arr.push(rate_value);
+				}
+				else{
+					rate_value = "1";
+					arr.push(rate_value);
+				}
+				// console.log(document.querySelector('input[name=x]:checked'));
+				// console.log(rate_value);
+
+				console.log(arr);
+				sub.value = arr.toString();
+				console.log(sub.value);
+			
+
+			}
+
+			console.log("test");
+			
+
+
+
+		</script>
+	</body>
+</html>

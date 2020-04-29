@@ -1,0 +1,71 @@
+.source{
+    width:100%;
+    text-align: center;
+    padding-top : 70px;
+}
+
+body{
+    background: none
+}
+
+h1{
+
+    color:black;
+    margin-bottom: 10px;
+}
+
+h3{
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+    padding-top: 10px;
+    color: black;
+}
+
+h4{
+    color: black;
+}
+
+h5{
+    color: black;
+    font-size: 10px;
+}
+
+a .vid1{
+    width: 26%;
+    height: 300px;
+    text-align: center;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    float: left;
+    margin: 3%;
+    padding: 10px;
+    
+}
+
+.videos{
+    width: 80%;
+    margin-left: 10%;
+    height: 400px;
+    padding: 0 auto;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pdf{
+    width: 80%;
+    margin-left: 10%;
+    height: 400px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Courses{
+    width: 80%;
+    margin-left: 10%;
+    height: 400px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

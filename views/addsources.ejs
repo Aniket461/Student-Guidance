@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/company2.css">
+    <link rel="stylesheet" href="/css/sources.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+</head>
+<body style="background-image: linear-gradient(to right top, #716b6e, #868191, #899eb6, #80bece, #8ddcce);">
+
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="/">E-GUIDE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                            <li class="nav-item">
+                                    <a class="nav-link" href="/companydetails">Companies</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="/roles">Roles</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="https://studentguide.netlify.com/">ChatBot</a>
+                                  </li>
+               
+                  </ul>
+                </div>
+              </nav>
+
+              <section style="height: 1200px">
+                
+                <form action="/addsources" method="post">
+                 <div class="comps">
+                  <h2 style="margin-top: 30px;">Role Name</h2>
+<p >
+  <span class="input">
+    <input type="text" placeholder="Enter company name"  name="name">
+    <span></span> 
+  </span>
+</p>
+
+<div class="video">
+  <div class="innerdiv">
+    <h6>Name</h6> 
+    <h6>Descritpion</h6> 
+    <h6>Link</h6> 
+  </div>
+  <h4 id="h41">Video1</h4>
+  <input type="text" id="in" name="vid1" />
+  <input type="text" id="in" name="des1"/>
+  <input type="text" id="in" name="link1"/>
+<h4 id="h41">Video2</h4>
+<input type="text" id="in" name="vid2" />
+  <input type="text" id="in" name="des2"/>
+  <input type="text" id="in" name="link2"/>
+  <h4 id="h41">Video3</h4>
+  <input type="text" id="in" name="vid3"/>
+  <input type="text" id="in" name="des3"/>
+  <input type="text" id="in"name="link3"/>
+</div>
+
+<div class="pdf">
+    <div class="innerdiv">
+      <h6>Name</h6> 
+      <h6>Descritpion</h6> 
+      <h6>Link</h6> 
+    </div>
+    <h4 id="h41">PDF1</h4>
+    <input type="text" id="in" name="pd1" />
+    <input type="text" id="in" name="des4"/>
+    <input type="text" id="in" name="link4"/>
+  <h4 id="h41">PDF2</h4>
+  <input type="text" id="in" name="pd2" />
+    <input type="text" id="in" name="des5"/>
+    <input type="text" id="in" name="link5"/>
+    <h4 id="h41">PDF3</h4>
+    <input type="text" id="in" name="pd3"/>
+    <input type="text" id="in" name="des6"/>
+    <input type="text" id="in"name="link6"/>
+  </div>
+
+  
+  <div class="course">
+      <div class="innerdiv">
+        <h6>Name</h6> 
+        <h6>Descritpion</h6> 
+        <h6>Link</h6> 
+      </div>
+      <h4 id="h41">Course1</h4>
+      <input type="text" id="in" name="co1" />
+      <input type="text" id="in" name="des7"/>
+      <input type="text" id="in" name="link7"/>
+    <h4 id="h41">Course2</h4>
+    <input type="text" id="in" name="co2" />
+      <input type="text" id="in" name="des8"/>
+      <input type="text" id="in" name="link8"/>
+      <h4 id="h41">Course3</h4>
+      <input type="text" id="in" name="co3"/>
+      <input type="text" id="in" name="des9"/>
+      <input type="text" id="in"name="link9"/>
+    </div>
+    
+
+ <input type="submit" name="" class="btn btn-outline-dark butt" value="Add Sources">
+</div>
+                </form>
+
+              </section>
+
+
+
+
+
+
+              <footer class="bg-dark" style="margin-top:0px; overflow:hidden;">
+  
+                  <div class="d1">
+                    <h3>NEWSLETTER</h3>
+                    <p style="color: #DCDCDC; padding: 3px; font-size: 12px;">Submit your email below to sign up for our NewsLetter and stay upto date with all the latest upgrades!!</p>
+                    <form class="form-inline my-2 my-lg-0" style="text-align: center;">
+                      <input class="form-control mr-sm-2" type="email" name="newsletter" placeholder="email" style="width: 70%; margin-left: 5%;">
+                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left: 5%;"><i class="fa fa-envelope"></i></button>
+                    </form>
+                  
+                  
+                  </div>
+                  <div class="d2">
+                    <h3>FOLLOW US</h3>
+                    <p style="color: #DCDCDC; padding: 3px; font-size: 12px;"> Follow us on our Social Media handles to keep up with all the latest happening at E-Guide!! </p>
+                  
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    
+                  </div>
+                  <div class="d3">
+                    <h3>CONTACT</h3>
+                    <p style="color: #DCDCDC; padding: 3px; font-size: 12px;"> To Contact us you can call or email athe given address and we will get back to you ASAP!!</p>
+                    <div>
+                    <i class="fa fa-mobile"></i><p style="margin-left: -10px;">+91-7715089526</p></div>
+                    <div>
+                    <i class="fa fa-envelope"></i><p>surveaniket461@gmail.com</p>
+                    </div>
+                  </div>
+                  
+                  </footer>
+            
+
+
+</body></html>
